@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBoarder - Discover Images by Mood</title>
+    <meta name="description" content="Find and explore beautiful images based on your current mood with MoodBoarder">
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <i class="fa-solid fa-image logo-icon" aria-hidden="true"></i>
+                <h1>MoodBoarder</h1>
+            </div>
+            
+            <nav>
+                <form class="search-form" role="search" aria-label="Search images by mood">
+                    <div class="search-input-wrapper">
+                        <input 
+                            type="search" 
+                            id="mood-search" 
+                            name="mood-search"
+                            placeholder="Search by mood..." 
+                            aria-label="Search by mood"
+                            autocomplete="off"
+                            required
+                        >
+                        <button type="submit" aria-label="Search for images">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading-container" style="display: none;" aria-hidden="true">
+            <div class="spinner" role="status" aria-label="Loading images">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <p>Searching for images...</p>
+            </div>
+        </div>
+
+        <!-- Image Grid Container -->
+        <section id="image-grid" class="image-grid-container" aria-live="polite">
+            <!-- Dynamic content will be inserted here via JavaScript -->
+        </section>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="no-results-container" style="display: none;" role="alert">
+            <div class="no-results-content">
+                <i class="fa-regular fa-face-frown" aria-hidden="true"></i>
+                <h2>No Images Found</h2>
+                <p>We couldn't find any images matching your mood. Try a different search term!</p>
+                <button type="button" class="retry-button" onclick="document.getElementById('mood-search').focus()">
+                    Try Another Search
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 MoodBoarder. All rights reserved.</p>
+                <p>
+                    Images powered by 
+                    <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Unsplash website">
+                        Unsplash
+                        <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Local JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
