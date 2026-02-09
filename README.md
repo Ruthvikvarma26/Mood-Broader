@@ -15,7 +15,6 @@ Discover visual inspiration by mood. Search for any feeling (e.g., "cozy," "sere
 ## 🚀 Live Demo
 
 Experience the app live: https://moodbroader.netlify.app/
-(Replace this with your actual Netlify URL)
 
 ## 🛠 Built With
 
